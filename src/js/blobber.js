@@ -1,12 +1,16 @@
 (function($) {
 
-    $.fn.blobber = function() {
-    
+    $.fn.blobber = function(options) {
+
         var i = 1;
+
+        var settings = $.extend({
+            complete     : null
+        }, options);
 
         $("video").each(function() {
             var video_url = $(this).attr("src");
-            var video_id  = "#" + $(this).attr("id");
+            var video_id = "#" + $(this).attr("id");
 
             var req = new XMLHttpRequest();
             req.open('GET', video_url , true);
@@ -25,15 +29,16 @@
                     var video_count = $("video").length;
 
                     if(video_count > 1){
-                        console.log("Downloading Videos: " + i + " of " + video_count + " Videos Loaded (Ready at " + video_count + ")");
+                        console.log("Downloading Videos: " + i + " of " + video_count + " Videos Downloaded. (Ready at " + video_count + ")");
                     } else {
-                        console.log("Downloading Videos: 1 Video is Loaded.");
+                        console.log("Downloading Videos: 1 Video is Downloaded.");
                     }
 
                     i = i + 1;
 
                     if(i == (video_count + 1)){
-                        console.log("Hooray! We're Ready");
+                        settings.complete.call( this );
+                        console.log("Hooray! We're Ready to Fire.");
                     }
                 }
             };
