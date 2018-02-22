@@ -5,8 +5,8 @@
         var i = 1;
 
         $("video").each(function() {
-            const video_url = $(this).attr("src");
-            const video_id  = "#" + $(this).attr("id");
+            var video_url = $(this).attr("src");
+            var video_id  = "#" + $(this).attr("id");
 
             var req = new XMLHttpRequest();
             req.open('GET', video_url , true);
@@ -22,7 +22,7 @@
                     $(video_id).attr("src", vid);
 
                     //Console progress bar
-                    const video_count = $("video").length;
+                    var video_count = $("video").length;
 
                     if(video_count > 1){
                         console.log("Downloading Videos: " + i + " of " + video_count + " Videos Loaded (Ready at " + video_count + ")");
