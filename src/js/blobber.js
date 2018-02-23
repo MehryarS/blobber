@@ -8,7 +8,7 @@
             complete     : null
         }, options);
 
-        $("video").each(function() {
+        $(this).find("video").each(function() {
             var video_url = $(this).attr("src");
             var video_id = "#" + $(this).attr("id");
 
@@ -37,8 +37,13 @@
                     i = i + 1;
 
                     if(i == (video_count + 1)){
-                        settings.complete.call( this );
-                        console.log("Hooray! We're Ready to Fire.");
+
+                        //if Callback function is defined
+                        if ( $.isFunction( settings.complete ) ) {
+                            settings.complete.call( this );
+                        } else {
+                            console.log("Hooray! We're Ready to Fire.");
+                        }                        
                     }
                 }
             };
