@@ -1,5 +1,7 @@
 (function($) {
 
+    // $("body").append("<div class='progress'></div>");
+
     $.fn.blobber = function(options) {
 
         var i = 1;
