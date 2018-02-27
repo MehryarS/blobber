@@ -1,6 +1,6 @@
 .progress{
     position: fixed;
-    background: white;
+    // background: white;
     width: 100vw;
     height: 100vh;
     left: 0px;
@@ -11,21 +11,10 @@
         position: fixed;
         top: 0px;
         left: 0px;
-        width: 50vw;
+        width: 0;
         height: 3px;
         z-index: 11;
-        background: #000000;
-
-        &:after{
-            content: '';
-            position: absolute;
-            right: 0px;
-            height: 3px;
-            width: 20px;
-            background: #000000;
-            -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
-        }
+        // background: #000000;
     }
 
     .progress-animation{
@@ -50,20 +39,25 @@
         -webkit-transform: translate(-50% , -50%);
         -moz-transform: translate(-50% , -50%);
         transform: translate(-50% , -50%);
-        font-size: .8em;
-        color: #999999;
-        font-family: monospace;
-        font-weight: bold;
+
+        span{
+            font-size: .8em;
+            // color: #999999;
+            font-family: monospace;
+            font-weight: bold;
+            margin-top: 0;
+            display: none;
+        }
     }
 }
 
-/* Safari */
+/* Spinner Progress Animation */
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
+}
+
+@keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-  }
+}
