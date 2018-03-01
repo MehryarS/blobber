@@ -1,9 +1,11 @@
 # blobber
-====
+
 It is a light javascript library based on jQuery for helping you to make object URL for videos on each page.
 The URL lifetime is tied to the document in the window on which it was created.
 
 *blobber make blob URL (blob is a pseudo protocol - **b**inary **l**arge **ob**ject) for your videos.*
+
+Check [demo](http://blobber.mehryars.com/)
 
 
 
@@ -30,6 +32,7 @@ or you can do it manually:
 
 
 ### USAGE:
+
 **Step 1:** Add videos to html document as DOM:
 ```html
 <div id="video-container">
@@ -54,7 +57,9 @@ $("#video-container").blobber();
 
 
 ### OPTIONS:
+
 You can customize:
+
 | Parameter            | Default Value | Description                              |
 | -------------------- | ------------- | ---------------------------------------- |
 | complete             | null          | Use founctions as a callback             |
@@ -71,6 +76,7 @@ You can customize:
 
 
 ### EXAMPLE:
+
 ```javascript
 $("#video-container").blobber({
     complete: function(){
@@ -82,5 +88,6 @@ $("#video-container").blobber({
 
 
 
-###LICENSE:
+### LICENSE:
+
 This software is free to use under the MIT license.
