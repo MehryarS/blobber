@@ -21,7 +21,7 @@ or you can do it manually:
 ```html
 <link rel="stylesheet" type="text/css" href="css/blobber.css">
 ```
-2. Include the JS file before the end of you body tag, below the JQuery plugin
+2. Include the JS file before the end of your body tag, below the JQuery plugin
 ```html
 <script type="text/javascript" src="js/blobber.js"></script>
 ```
@@ -42,7 +42,7 @@ or you can do it manually:
 
 #####TIPS:
 1. Each video should have an unique id.
-2. You can use all video attribute.
+2. You can use all video attributes.
 
 
 **Step 2:** Fire the plugin
