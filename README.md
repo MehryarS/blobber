@@ -14,7 +14,7 @@ Check [demo](http://blobber.mehryars.com/)
 
 You can use npm to install blobber
 ```sh
-npm install blobber
+npm install url-blobber
 ```
 
 

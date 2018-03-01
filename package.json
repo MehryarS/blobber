@@ -1,5 +1,5 @@
 {
-  "name": "blobber",
+  "name": "url-blobber",
   "version": "1.0.0",
   "description": "blobber force the browser to download videos and make ready to play on page load",
   "main": "index.js",
