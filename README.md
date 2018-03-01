@@ -1,4 +1,4 @@
-#blobber
+# blobber
 ====
 It is a light javascript library based on jQuery for helping you to make object URL for videos on each page.
 The URL lifetime is tied to the document in the window on which it was created.
@@ -8,7 +8,7 @@ The URL lifetime is tied to the document in the window on which it was created.
 
 
 
-###INSTALLATION:
+### INSTALLATION:
 
 You can use npm to install blobber
 ```sh
@@ -29,7 +29,7 @@ or you can do it manually:
 
 
 
-###USAGE:
+### USAGE:
 **Step 1:** Add videos to html document as DOM:
 ```html
 <div id="video-container">
@@ -40,7 +40,7 @@ or you can do it manually:
 </div>
 ```
 
-#####TIPS:
+##### TIPS:
 1. Each video should have an unique id.
 2. You can use all video attributes.
 
@@ -53,24 +53,24 @@ $("#video-container").blobber();
 
 
 
-###OPTIONS:
+### OPTIONS:
 You can customize:
-Parameter | Default Value | Description
------------- | ------------- | -------------
-complete | null | Use founctions as a callback
-preloader | true | Disable preloader
-preloaderBackground | "#FFFFFF" | Change preloader background color
-progressBar | true | Hide progress bar on preloader page
-progressBarColor | "#000000" | Change progress bar color
-progressSpinner | true | Hide spinner animation on preloader page
-progressSpinnerColor | "#000000" | Change spinner animation color
-progressStatus | true | Hide status reporter on preloader page
-progressStatusColor | "#999999" | Change status reporter color
+| Parameter            | Default Value | Description                              |
+| -------------------- | ------------- | ---------------------------------------- |
+| complete             | null          | Use founctions as a callback             |
+| preloader            | true          | Disable preloader                        |
+| preloaderBackground  | "#FFFFFF"     | Change preloader background color        |
+| progressBar          | true          | Hide progress bar on preloader page      |
+| progressBarColor     | "#000000"     | Change progress bar color                |
+| progressSpinner      | true          | Hide spinner animation on preloader page |
+| progressSpinnerColor | "#000000"     | Change spinner animation color           |
+| progressStatus       | true          | Hide status reporter on preloader page   |
+| progressStatusColor  | "#999999"     | Change status reporter color             |
 
 
 
 
-###EXAMPLE:
+### EXAMPLE:
 ```javascript
 $("#video-container").blobber({
     complete: function(){
