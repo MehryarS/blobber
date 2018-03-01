@@ -39,7 +39,7 @@
         $(this).find("video").each(function() {
             var videoURL = $(this).attr("src");
             var videoID = "#" + $(this).attr("id");
-            var videoTotalCount = $("video").length;
+            var videoTotalCount = $(this).find("video").length;
             var percnet = 0;
 
             function loadFile(url, callback) {
