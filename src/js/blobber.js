@@ -34,7 +34,7 @@
         }
 
         if ( settings.progressStatus == true ) {
-            $(".progress").append('<div class="progress-status" style="color: ' + settings.progressStatusColor  + '"><span></span></div>');
+            $(".progress").append('<div class="progress-status" style="color: ' + settings.progressStatusColor  + '"><span>Please Wait...</span></div>');
         }
 
         $(this).find("video").each(function() {
