@@ -2,3 +2,4 @@ node_modules
 .sass-cache
 dist/scss
 demo
+package-lock.json
